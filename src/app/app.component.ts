@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { employees } from './employees';
+import { Employee } from './model/Employee.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyTestingApp...!';
+  emps: Employee[] = employees;
 }
